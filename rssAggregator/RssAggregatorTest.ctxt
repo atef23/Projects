@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=RssAggregatorTest()
+comment0.text=\nCreates\ a\ new\ RssAggregatorTest\ test\ object.\n\n
+comment1.target=void\ setUp()
+comment1.text=\nSets\ up\ the\ test\ fixture.\nCalled\ before\ every\ test\ case\ method.\n\n
+comment2.target=void\ testSize()
+comment2.text=.\nTests\ the\ size\ of\ the\ array\n\n\n
+comment3.target=void\ testAddFromFeed()
+comment3.text=.\nTests\ the\ addFromFeed\ method\n\n\n
+comment4.target=void\ testKeyWordAddFromFeed1()
+comment4.text=.\nTests\ the\ addFromFeed\ method\nwith\ a\ keyword\ "government"\n\n\n
+comment5.target=void\ testKeyWordAddFromFeed2()
+comment5.text=.\nTests\ the\ addFromFeed\ method\nwith\ a\ keyword\ "Germany"\n\n\n
+comment6.target=void\ testGetKeyword()
+comment6.text=.\nTests\ the\ getKeyword\ method\nwith\ a\ keyword\ "hello"\n\n\n
+numComments=7

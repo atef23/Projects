@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=RssAggregator()
+comment0.text=\nCreates\ a\ new\ RssAggregator\ object.\n\n
+comment1.target=ArrayList<RssEntry>\ getEntries()
+comment1.text=.\nAccessor\ method\ for\ the\ array\n@return\ entries\ entries\ of\ the\ array\n\n
+comment2.params=feed
+comment2.target=void\ addFromFeed(RssFeed)
+comment2.text=.\nThe\ method\ to\ add\ entries\ from\ the\ feed\ to\ the\ array.\n@param\ feed\ The\ feed\ that\ goes\ to\ the\ method\n\n
+comment3.target=String\ getKeyword()
+comment3.text=.\nAccessor\ method\ for\ the\ keyword\n@return\ keyword\ the\ keyword\n\n
+comment4.params=newKeyword
+comment4.target=void\ setKeyword(String)
+comment4.text=.\nThe\ mutator\ method\ for\ the\ keyword\ field\n@param\ newKeyword\ the\ input\ keyword\n\n
+numComments=5

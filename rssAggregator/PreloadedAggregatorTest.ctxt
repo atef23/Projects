@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=PreloadedAggregatorTest()
+comment0.text=\nCreates\ a\ new\ PreloadedAggregatorTest\ test\ object.\n\n
+comment1.target=void\ setUp()
+comment1.text=\nSets\ up\ the\ test\ fixture.\nCalled\ before\ every\ test\ case\ method.\n\n
+comment2.target=void\ testGetKeyword()
+comment2.text=\nSets\ up\ the\ test\ fixture.\nCalled\ before\ every\ test\ case\ method.\n\n
+comment3.target=void\ testAddFromFeed1()
+comment3.text=.\nTests\ the\ addFromFeed\ method\n\n\n
+comment4.target=void\ testAddFromFeed2()
+comment4.text=.\nTests\ the\ addFromFeed\ method\ \nfrom\ 2\n\n\n
+numComments=5

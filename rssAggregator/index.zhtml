@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Lab 05</title>
+</head>
+<body>
+
+<h1>Lab 05</h1>
+
+<p>This is an extremely simple RSS aggregator.</p>
+
+<variable type = "PreloadedAggregator" name="myAggregator" value="new PreloadedAggregator()"/>
+<variable type = "RssEntry" name = "entry" value = "null"/>
+
+<listbox model="@{myAggregator.entries}" selectedItem = "@{entry}">
+    <listitem each="@{entry.title}">
+        <listcell>
+            <text value="@{entry.description}"/>
+        </listcell>
+   </listitem>
+</listbox>
+
+</body>
+</html>
