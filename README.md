@@ -1,8 +1,8 @@
 Projects
 ========
 
-Atef Aziz
-atef@vt.edu
-(571) 451-9476
+<p>Atef Aziz</p>
+<p>atef@vt.edu</p>
+<p>(571) 451-9476</p>
 
-This respository contains projects which I have worked on.
+<p>This respository contains projects which I have worked on.</p>
