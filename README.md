@@ -1,5 +1,6 @@
 Projects
 ========
+
 Atef Aziz
 atef@vt.edu
 (571) 451-9476
