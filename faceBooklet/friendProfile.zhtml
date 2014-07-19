@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Atef's Facebooklet</title>
+</head>
+<body> 
+<p></p>
+<variable type="FaceBooklet" name="myFaceBooklet1" value="new FaceBooklet()"/> 
+<variable type="ProfileViewer" name="myProfileViewer" value="new ProfileViewer(myFaceBooklet1)"/> 
+<variable type="WallPostingViewer" name="myWallPostingViewer" value="new WallPostingViewer(myFaceBooklet1)"/> 
+
+<p></p>
+
+Find a Friend: <textbox id = "friendSearch"/>
+<button label="View Profile"> 
+    <attribute name="onClick">
+		myProfileViewer.setNameToView(friendSearch.getValue());
+    </attribute>
+</button> 
+
+<p></p>
+
+<h1>Profile</h1>
+<p></p>
+<image src= "@{myProfileViewer.profileToView.pictureUrl}"/>
+<p></p>
+
+<window id="win" title="Info" border="normal" width="300px">
+<p>Name: <text value="@{myProfileViewer.profileToView.name}"/></p>
+<p>Status: <text value="@{myProfileViewer.profileToView.status}"/></p>
+<p>Email: <text value="@{myProfileViewer.profileToView.email}"/></p>
+<p>Nick Name: <text value="@{myProfileViewer.profileToView.nickName}"/></p>
+</window>
+
+<h1>Wall</h1>
+
+<p></p>
+
+<window id="win2" title="Post to Wall" border="normal" width="300px">
+<p>Message: <textbox id = "msg"/></p>
+<button label="Post"> 
+    <attribute name="onClick">
+		myProfileViewer.getProfileToView().postToWall(myFaceBooklet1.getCurrentUser().getName(), msg.getValue());
+                myFaceBooklet1.setSharedObject(myProfileViewer.getProfileToView().getName(), myProfileViewer.getProfileToView() );
+    </attribute>
+</button> 
+</window>
+
+<p></p>
+
+<listbox model="@{myProfileViewer.profileToView.wall}">
+        <listitem each="@{myWallPostingViewer.postToView}">
+            <listcell>
+                <text value="@{myWallPostingViewer.formatPost}"/>
+            </listcell>
+        </listitem>
+</listbox>
+
+<p></p>
+
+<p></p>
+<button label="Add to Friends"> 
+    <attribute name="onClick">
+		myProfileViewer.addViewedProfileAsFriend();
+                myFaceBooklet1.storeCurrentUserChanges();
+    </attribute>
+</button> 
+
+
+<p></p>
+
+
+</body>
+</html>

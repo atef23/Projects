@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Entity()
+comment0.text=\nCreates\ a\ new\ Entity\ object.\n\n
+comment1.target=String\ getName()
+comment1.text=.\nAccessor\ method\ for\ the\ name\ field\n@return\ name\ the\ name\ of\ the\ entity\n\n
+comment2.params=inputName
+comment2.target=void\ setName(String)
+comment2.text=.\nsetter\ method\ for\ the\ name\ object\n@param\ inputName\ tag\ for\ 'name'\n\n
+comment3.target=String\ getPictureUrl()
+comment3.text=.\nAccessor\ method\ for\ the\ pictureUrl\ field\n@return\ pictureUrl\ the\ location\ of\ the\ picture\n\n
+comment4.params=inputPictureUrl
+comment4.target=void\ setPictureUrl(String)
+comment4.text=.\nsetter\ method\ for\ the\ pictureUrl\ object\n@param\ inputPictureUrl\ tag\ for\ 'pictureUrl'\n\n
+comment5.target=ArrayList<String>\ getFriends()
+comment5.text=.\nAccessor\ method\ for\ the\ friends\ list\n@return\ friendsList\ the\ list\ of\ friends\n\n
+comment6.params=newFriend
+comment6.target=void\ addFriend(String)
+comment6.text=.\nmutator\ method\ for\ the\ friendsList\n@param\ newFriend\ tag\ for\ friend\ to\ add\n\n
+numComments=7

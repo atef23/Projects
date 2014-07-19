@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=inFaceBooklet
+comment0.target=WallPostingViewer(FaceBooklet)
+comment0.text=.\nCreates\ a\ new\ WallPostingViewer\ object.\n@param\ inFaceBooklet\ the\ facebooklet\n\n
+comment1.target=FaceBooklet\ getWallFaceBooklet()
+comment1.text=.\nAccessor\ method\ for\ wallFaceBooklet\n@return\ wallFaceBooklet\ the\ associated\nFaceBooklet\n\n
+comment2.params=inPosting
+comment2.target=void\ setPostToView(WallPosting)
+comment2.text=.\nMutator\ method\ for\ postToView\n@param\ inPosting\ the\ input\ wall\ post\n\n
+comment3.target=WallPosting\ getPostToView()
+comment3.text=.\nAccessor\ method\ for\ postToView\n@return\ postToView\ the\ post\n\n
+comment4.target=String\ formatPost()
+comment4.text=.\nAccessor\ method\ for\ formattedPost\n@return\ formattedPost\ the\ post\n\n
+comment5.params=inFriendToShow
+comment5.target=void\ setFriendToShow(String)
+comment5.text=.\nMutator\ method\ for\ friendToShow\ field\n@param\ inFriendToShow\ the\ friend\n\n
+comment6.target=String\ getFriendToShow()
+comment6.text=.\nAccessor\ method\ for\ friendToShow\ field\n@return\ this.friendToShow\ the\ friend\n\n
+comment7.target=String\ formatFriend()
+comment7.text=.\nAccessor\ method\ for\ HTML\ formatted\ friend\ \ninformation\n@return\ formattedFriend\ the\ information\n\n
+numComments=8

@@ -1,0 +1,158 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x77b45a20, pid=4540, tid=4620
+#
+# JRE version: 6.0_21-b07
+# Java VM: Java HotSpot(TM) Server VM (17.0-b17 mixed mode windows-x86 )
+# Problematic frame:
+# C  [ntdll.dll+0x65a20]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x10bb9c00):  JavaThread "main" [_thread_in_vm, id=4620, stack(0x10740000,0x10790000)]
+
+siginfo: ExceptionCode=0xc0000005, writing address 0x00000000
+
+Registers:
+EAX=0x00000000, EBX=0xdb4d0001, ECX=0x00000217, EDX=0x00000000
+ESP=0x1078fdcc, EBP=0x1078fe00, ESI=0x06b4e9dc, EDI=0xdb4d0000
+EIP=0x77b45a20, EFLAGS=0x00010206
+
+Top of Stack: (sp=0x1078fdcc)
+0x1078fdcc:   00000000 01310000 10beda70 0000000b
+0x1078fddc:   10e02ae8 00000000 00000000 00000001
+0x1078fdec:   10dd1ad8 1078fe04 00000000 00000001
+0x1078fdfc:   10beda68 1078fe14 77b45883 10beda70
+0x1078fe0c:   01318248 0000000b 1078fe28 7645c56f
+0x1078fe1c:   01310000 00000000 10beda68 1078fe70
+0x1078fe2c:   7c34218a 01310000 00000000 10beda70
+0x1078fe3c:   01318248 10beda70 0000000b 1078fe2c 
+
+Instructions: (pc=0x77b45a20)
+0x77b45a10:   c1 ea 10 0b df 0b c8 8b 06 c7 45 f8 01 00 00 00
+0x77b45a20:   89 30 8b 45 e0 8b 55 e4 8d 7e 08 f0 0f c7 0f 3b 
+
+
+Stack: [0x10740000,0x10790000],  sp=0x1078fdcc,  free space=13f1078f900k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ntdll.dll+0x65a20]
+C  [ntdll.dll+0x65883]
+C  [kernel32.dll+0x4c56f]
+C  [msvcr71.dll+0x218a]
+V  [jvm.dll+0x20794d]
+V  [jvm.dll+0x311cbf]
+V  [jvm.dll+0x312b6a]
+V  [jvm.dll+0x28afdc]
+C  [msvcr71.dll+0x9565]
+C  [kernel32.dll+0x44911]
+C  [ntdll.dll+0x3e4b6]
+C  [ntdll.dll+0x3e489]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x10bb9400 JavaThread "main" [_thread_blocked, id=2776, stack(0x10860000,0x108b0000)]
+=>0x10bb9c00 JavaThread "main" [_thread_in_vm, id=4620, stack(0x10740000,0x10790000)]
+  0x01319800 JavaThread "DestroyJavaVM" [_thread_blocked, id=1552, stack(0x000c0000,0x00110000)]
+  0x0fc02400 JavaThread "BlueJ worker thread" [_thread_blocked, id=2752, stack(0x108b0000,0x10900000)]
+  0x0fbdf400 JavaThread "AWT-Windows" daemon [_thread_in_native, id=5188, stack(0x10810000,0x10860000)]
+  0x0fbdd800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=3280, stack(0x106f0000,0x10740000)]
+  0x0fb56000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=2172, stack(0x10070000,0x100c0000)]
+  0x0fb4d000 JavaThread "CompilerThread1" daemon [_thread_blocked, id=3632, stack(0x10020000,0x10070000)]
+  0x0fb4a400 JavaThread "CompilerThread0" daemon [_thread_blocked, id=4860, stack(0x0ffd0000,0x10020000)]
+  0x0fb3f800 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=2072, stack(0x0ff80000,0x0ffd0000)]
+  0x0fb3bc00 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=2544, stack(0x0ff20000,0x0ff70000)]
+  0x0fb39800 JavaThread "JDWP Transport Listener: dt_shmem" daemon [_thread_blocked, id=3692, stack(0x0fed0000,0x0ff20000)]
+  0x0fb31800 JavaThread "Attach Listener" daemon [_thread_blocked, id=5412, stack(0x0fe80000,0x0fed0000)]
+  0x0fb28c00 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5836, stack(0x0fe30000,0x0fe80000)]
+  0x0fb27c00 JavaThread "Surrogate Locker Thread (CMS)" daemon [_thread_blocked, id=5960, stack(0x0fde0000,0x0fe30000)]
+  0x0faf5000 JavaThread "Finalizer" daemon [_thread_blocked, id=2972, stack(0x0fd90000,0x0fde0000)]
+  0x0faf4400 JavaThread "Reference Handler" daemon [_thread_blocked, id=5392, stack(0x0fd40000,0x0fd90000)]
+
+Other Threads:
+  0x0211f000 VMThread [stack: 0x0fcf0000,0x0fd40000] [id=6068]
+  0x0fb59400 WatcherThread [stack: 0x100c0000,0x10110000] [id=5748]
+
+VM state:synchronizing (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x01317af8] Threads_lock - owner thread: 0x0211f000
+[0x01318248] JvmtiThreadState_lock - owner thread: 0x10bb9c00
+
+Heap
+ par new generation   total 14784K, used 3210K [0x051e0000, 0x061e0000, 0x061e0000)
+  eden space 13184K,  13% used [0x051e0000, 0x0539acd8, 0x05ec0000)
+  from space 1600K,  89% used [0x05ec0000, 0x06027d80, 0x06050000)
+  to   space 1600K,   0% used [0x06050000, 0x06050000, 0x061e0000)
+ concurrent mark-sweep generation total 49152K, used 1721K [0x061e0000, 0x091e0000, 0x0b1e0000)
+ concurrent-mark-sweep perm gen total 16384K, used 10936K [0x0b1e0000, 0x0c1e0000, 0x0f1e0000)
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\java.exe
+0x77ae0000 - 0x77c07000 	C:\Windows\system32\ntdll.dll
+0x76410000 - 0x764eb000 	C:\Windows\system32\kernel32.dll
+0x769b0000 - 0x76a76000 	C:\Windows\system32\ADVAPI32.dll
+0x77a10000 - 0x77ad2000 	C:\Windows\system32\RPCRT4.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\msvcr71.dll
+0x6db80000 - 0x6dfc3000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\server\jvm.dll
+0x76c10000 - 0x76cad000 	C:\Windows\system32\USER32.dll
+0x77c10000 - 0x77c5b000 	C:\Windows\system32\GDI32.dll
+0x749a0000 - 0x749d2000 	C:\Windows\system32\WINMM.dll
+0x76cc0000 - 0x76d6a000 	C:\Windows\system32\msvcrt.dll
+0x76710000 - 0x76854000 	C:\Windows\system32\ole32.dll
+0x76860000 - 0x768ed000 	C:\Windows\system32\OLEAUT32.dll
+0x74960000 - 0x74999000 	C:\Windows\system32\OLEACC.dll
+0x76980000 - 0x7699e000 	C:\Windows\system32\IMM32.DLL
+0x76520000 - 0x765e8000 	C:\Windows\system32\MSCTF.dll
+0x75fc0000 - 0x75fec000 	C:\Windows\system32\apphelp.dll
+0x769a0000 - 0x769a9000 	C:\Windows\system32\LPK.DLL
+0x77cc0000 - 0x77d3d000 	C:\Windows\system32\USP10.dll
+0x6d860000 - 0x6d86c000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\verify.dll
+0x6d3e0000 - 0x6d3ff000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\java.dll
+0x6d340000 - 0x6d348000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\hpi.dll
+0x760f0000 - 0x760f7000 	C:\Windows\system32\PSAPI.DLL
+0x6d430000 - 0x6d459000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\jdwp.dll
+0x6d750000 - 0x6d756000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\npt.dll
+0x6d8a0000 - 0x6d8af000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\zip.dll
+0x6d2a0000 - 0x6d2a8000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\dt_shmem.dll
+0x6d0b0000 - 0x6d1fa000 	C:\Program Files\Java\jdk1.6.0_21\jre\bin\awt.dll
+0x720d0000 - 0x72112000 	C:\Windows\system32\WINSPOOL.DRV
+0x75190000 - 0x7532e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.6001.18523_none_5cdd65e20837faf2\COMCTL32.dll
+0x77c60000 - 0x77cb8000 	C:\Windows\system32\SHLWAPI.dll
+0x72df0000 - 0x72dfc000 	C:\Windows\system32\DWMAPI.DLL
+0x74b60000 - 0x74b9f000 	C:\Windows\system32\uxtheme.dll
+0x729e0000 - 0x72a40000 	C:\Program Files\Common Files\microsoft shared\ink\tiptsf.dll
+
+VM Arguments:
+jvm_args: -Xincgc -enableassertions -Dabbot.robot.verify=false -Xdebug -Xnoagent -Xrunjdwp:transport=dt_shmem,address=bluej0,server=y,suspend=y 
+java_command: bluej.runtime.ExecServer
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\Java\jre6\lib\ext\QTJava.zip
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2009a\bin;C:\Program Files\MATLAB\R2009a\bin\win32;C:\Program Files\MATLAB\R2007b\bin;C:\Program Files\MATLAB\R2007b\bin\win32;C:\Program Files\Common Files\DivX Shared\;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Program Files\QuickTime\QTSystem\
+USERNAME=Atef
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 6, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6001 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 3143352k(1683376k free), swap 6506896k(4981700k free)
+
+vm_info: Java HotSpot(TM) Server VM (17.0-b17) for windows-x86 JRE (1.6.0_21-b07), built on Jul 17 2010 01:03:51 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Mon Nov 29 12:55:38 2010
+elapsed time: 1101 seconds
+

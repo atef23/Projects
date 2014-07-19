@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=inputFB
+comment0.target=ProfileViewer(FaceBooklet)
+comment0.text=\nCreates\ a\ new\ ProfileViewer\ object.\n@param\ inputFB\ the\ tag\ for\ the\ fb\n\n
+comment1.target=FaceBooklet\ getCurrentViewerObj()
+comment1.text=.\nMethod\ for\ retrieving\ current\ facebooklet\nobject\n@return\ viewerFB\ the\ object\n\n
+comment2.target=UserProfile\ getProfileToView()
+comment2.text=.\nAccessor\ for\ profileToView\n@return\ profileToView\n\n
+comment3.params=inputName
+comment3.target=void\ setNameToView(String)
+comment3.text=.\nMutator\ for\ profile\ name\n@param\ inputName\ the\ name\ to\ set\ the\ profile\nto\n\n
+comment4.target=String\ getNameToView()
+comment4.text=.\nAccessor\ for\ name\n@return\ profileToView.getName()the\ name\ of\ \nthe\ profile\n\n
+comment5.target=boolean\ isViewingCurrentUser()
+comment5.text=.\nAccessor\ viewer\ status\n@return\ boolean\ the\ status\ of\ viewership\n\n
+comment6.target=boolean\ isViewingDifferentUser()
+comment6.text=.\nAccessor\ viewer\ status\n@return\ boolean\ the\ status\ of\ viewership\n\n
+comment7.target=void\ clear()
+comment7.text=.\nMutator\ for\ profileToView\ field\n\n
+comment8.target=void\ addViewedProfileAsFriend()
+comment8.text=.\nMutator\ for\ friends\ list\n\n
+comment9.target=FaceBooklet\ getFaceBooklet()
+comment9.text=.\nAccessor\ for\ the\ FB\ object\n@return\ viewerFB\ tag\ for\ the\ fb\n\n
+numComments=10

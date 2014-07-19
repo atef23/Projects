@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=inFaceBooklet
+comment0.target=CalendarViewer(FaceBooklet)
+comment0.text=.\nCreates\ a\ new\ CalenderViewer\ object.\n@param\ inFaceBooklet\ the\ facebooklet\n\n
+comment1.params=inCal
+comment1.target=void\ setCalendarToView(EventCalendar)
+comment1.text=.\nMutator\ method\ for\ calendarToView\n@param\ inCal\ the\ input\ calendar\n\n
+comment2.target=EventCalendar\ getCalendarToView()
+comment2.text=.\nAccessor\ method\ for\ calendarToView\ field\n@return\ calendarToView\ the\ post\n\n
+comment3.target=FaceBooklet\ getCalendarFaceBooklet()
+comment3.text=.\nAccessor\ method\ for\ calendarFaceBooklet\ field\n@return\ calendarFaceBooklet\ the\ FB\n\n
+comment4.target=void\ formatCalendar()
+comment5.target=String\ getFormattedCalendar()
+numComments=6

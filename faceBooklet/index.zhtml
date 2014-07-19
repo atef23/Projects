@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Atef's Facebooklet</title>
+</head>
+<body>
+<variable type="FaceBooklet" name="myFaceBooklet" value="new FaceBooklet()"/> 
+<variable type="WallPostingViewer" name="myWallPostingViewer" value="new WallPostingViewer(myFaceBooklet)"/> 
+
+<h1>Profile Page</h1>
+
+<window id="win" title="Login" border="normal" width="300px">
+
+Username: <textbox id = "un"/>
+<p>
+Password: <textbox type="password" id = "pw"/>
+</p>
+
+<p>
+<button label="Create Profile"> 
+    <attribute name="onClick">
+		myFaceBooklet.createUser( un.getValue() , pw.getValue() );
+                myFaceBooklet.storeCurrentUserChanges();
+    </attribute>
+</button> 
+
+<button label="Login"> 
+    <attribute name="onClick">
+		myFaceBooklet.login( un.getValue() , pw.getValue() );
+    </attribute>
+</button> 
+
+<button label="Logout"> 
+    <attribute name="onClick">
+		myFaceBooklet.logout();
+    </attribute>
+</button> 
+
+<window border="normal" width="200px">
+<p>Login Feedback: <text value="@{myFaceBooklet.getLoginFeedback}"/></p>
+</window>
+
+</p>
+</window>
+
+<image src= "@{myFaceBooklet.getCurrentUser.pictureUrl}"/>
+
+<p></p>
+
+<window id="win2" title="Edit Info" border="normal" width="200px">
+<p>
+Status: <textbox id = "status" value="@{myFaceBooklet.getCurrentUser.status}" />
+</p>
+Email: <textbox id = "email" value="@{myFaceBooklet.getCurrentUser.email}" />
+<p>
+Nick Name: <textbox id = "nickName" value="@{myFaceBooklet.getCurrentUser.nickName}" />
+</p>
+<p>
+Picture URL: <textbox id = "picURL" value="@{myFaceBooklet.getCurrentUser.pictureUrl}" />
+</p>
+
+<p>
+<button label="Update"> 
+    <attribute name="onClick">
+                myFaceBooklet.getCurrentUser().setStatus(status.getValue()); 
+				myFaceBooklet.getCurrentUser().setEmail(email.getValue());
+                myFaceBooklet.getCurrentUser().setNickName(nickName.getValue()); 
+				myFaceBooklet.getCurrentUser().setPictureUrl(picURL.getValue());
+                myFaceBooklet.storeCurrentUserChanges();
+    </attribute>
+</button> 
+</p>
+</window>
+
+<p></p>
+<window id="win3" title="Current Info" border="normal" width="300px">
+<p>Name: <text value="@{myFaceBooklet.getCurrentUser.name}"/></p>
+<p>Status: <text value="@{myFaceBooklet.getCurrentUser.status}"/></p>
+<p>Email: <text value="@{myFaceBooklet.getCurrentUser.email}"/></p>
+<p>Nick Name: <text value="@{myFaceBooklet.getCurrentUser.nickName}"/></p>
+</window>
+
+<p></p>
+
+<h1>Wall</h1>
+
+<p></p>
+
+<listbox model="@{myFaceBooklet.getCurrentUser.wall}">
+        <listitem each="@{myWallPostingViewer.postToView}">
+            <listcell>
+                <text value="@{myWallPostingViewer.formatPost}"/>
+            </listcell>
+        </listitem>
+</listbox>
+
+<p></p>
+
+<h1>Friends</h1>
+
+<p></p>
+
+<listbox model="@{myFaceBooklet.getCurrentUser.getFriends}">
+<listitem each="@{myWallPostingViewer.friendToShow}">
+    <listcell>
+            <text value="@{myWallPostingViewer.formatFriend}"/>
+     </listcell>
+   </listitem>
+</listbox>
+
+<p></p>
+
+<button label="Find Friends"> 
+    <attribute name="onClick">
+		myFaceBooklet.showWebPage("friendProfile.zhtml");
+    </attribute>
+</button> 
+
+<button label="Events"> 
+    <attribute name="onClick">
+		myFaceBooklet.showWebPage("events.zhtml");
+    </attribute>
+</button> 
+
+
+<p></p>
+
+
+</body>
+</html>

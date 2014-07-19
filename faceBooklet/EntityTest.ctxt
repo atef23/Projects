@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=EntityTest()
+comment0.text=\nCreates\ a\ new\ EntityTest\ test\ object.\n\n
+comment1.target=void\ setUp()
+comment1.text=\nSets\ up\ the\ test\ fixture.\nCalled\ before\ every\ test\ case\ method.\n\n
+comment2.target=void\ testGetName()
+comment2.text=.\nTests\ the\ getName\ method\ \n\n\n
+comment3.target=void\ testSetName()
+comment3.text=.\nTests\ the\ setName\ method\ \ \n\n\n
+comment4.target=void\ testGetPictureUrl()
+comment4.text=.\nTests\ the\ getPictureUrl\ method\ \n\n\n
+comment5.target=void\ testSetPictureUrl()
+comment5.text=.\nTests\ the\ setPictureUrl\ method\n\n\n
+comment6.target=void\ testGetFriends()
+comment6.text=.\nTests\ the\ getFriends\ method\n\n\n
+comment7.target=void\ testAddFriend()
+comment7.text=.\nTests\ the\ addFriends\ method\n\n\n
+numComments=8

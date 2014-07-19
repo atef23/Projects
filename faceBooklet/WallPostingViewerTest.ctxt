@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=WallPostingViewerTest()
+comment0.text=.\nCreates\ a\ new\ WallPostingViewerTest\ test\ object.\n\n
+comment1.target=void\ setUp()
+comment1.text=.\nSets\ up\ the\ test\ fixture.\nCalled\ before\ every\ test\ case\ method.\n\n
+comment2.target=void\ testGetWallFaceBooklet()
+comment2.text=.\nTests\ the\ getWallFaceBooklet\ method\n\n
+comment3.target=void\ testSetPostToView()
+comment3.text=.\nTests\ the\ setPostToView\ method\n\n
+comment4.target=void\ testGetPostToView()
+comment4.text=.\nTests\ the\ getPostToView\ method\n\n
+comment5.target=void\ testFormatPost()
+comment5.text=.\nTests\ the\ formatPost\ method\n\n
+comment6.target=void\ testSetFriendToShow()
+comment6.text=.\nTests\ the\ setFriendToShow\ method\n\n
+comment7.target=void\ testGetFriendToShow()
+comment7.text=.\nTests\ the\ getFriendToShow\ method\n\n
+comment8.target=void\ testFormatFriend()
+comment8.text=.\nTests\ the\ formatFriend\ method\n\n
+comment9.target=void\ testFormatFriend2()
+comment9.text=.\nTests\ the\ formatFriend\ method\nfor\ null\ pictureURL\n\n
+numComments=10

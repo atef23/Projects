@@ -1,0 +1,23 @@
+<EventCalendar fieldset="true">
+  <no-comparator/>
+  <entry>
+    <string>calendarName</string>
+    <string>ctest</string>
+  </entry>
+  <entry>
+    <string>currentDay</string>
+    <null/>
+  </entry>
+  <entry>
+    <string>days</string>
+    <null/>
+  </entry>
+  <entry>
+    <string>daysEventNames</string>
+    <null/>
+  </entry>
+  <entry>
+    <string>scheduleOfEvents</string>
+    <map/>
+  </entry>
+</EventCalendar>

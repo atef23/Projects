@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=EventCalendarTest()
+comment0.text=.\nCreates\ a\ new\ eventCalendarTest\ test\ object.\n\n
+comment1.target=void\ setUp()
+comment1.text=.\nSets\ up\ the\ test\ fixture.\nCalled\ before\ every\ test\ case\ method.\n\n
+comment2.target=void\ testGetCalendarName()
+comment2.text=.\ntests\ the\ getCalendarName\ method\n\n
+comment3.target=void\ testGetDaysEvents()
+comment3.text=.\ntests\ the\ getDaysEvents\ methods\n\n
+comment4.target=void\ testAddEvent()
+comment4.text=.\ntests\ the\ addEvent\ methods\n\n
+comment5.target=void\ testFormatDateToString()
+comment5.text=.\ntests\ the\ formatDateToString\ method\n\n
+comment6.target=void\ testGetDays()
+numComments=7

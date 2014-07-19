@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=EventTest()
+comment0.text=.\nCreates\ a\ new\ EventTest\ test\ object.\n\n
+comment1.target=void\ setUp()
+comment1.text=.\nSets\ up\ the\ test\ fixture.\nCalled\ before\ every\ test\ case\ method.\n\n
+comment2.target=void\ testGetCreator()
+comment2.text=.\nTests\ the\ getCreator\ method\n\n
+comment3.target=void\ testGetInfo()
+comment3.text=.\nTests\ the\ getInfo\ method\n\n
+comment4.target=void\ testGetDateCreated()
+comment4.text=.\nTests\ the\ getDateCreated\ method\n\n
+comment5.target=void\ testGetDateScheduled()
+comment5.text=.\nTests\ the\ getDateScheduled\ method\n\n
+comment6.target=void\ testGetEventName()
+comment6.text=.\nTests\ the\ getEventName\ method\n\n
+numComments=7

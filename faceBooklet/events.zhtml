@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Atef's Facebooklet</title>
+</head>
+<body> 
+<p></p>
+<variable type="FaceBooklet" name="myFaceBooklet2" value="new FaceBooklet()"/>
+<variable type="CalendarViewer" name="myCV" value="new CalendarViewer(myFaceBooklet2)"/>
+ 
+<window id = "win" title = "View a Calendar" border = "normal" width = "200px">
+Search for a Calendar: <textbox id = "calendarSearch"/>
+<button label="Search"> 
+    <attribute name="onClick">
+		myCV.setCalendarToView(calendarSearch.getValue());
+    </attribute>
+</button> 
+</window>
+
+<p></p>
+
+<window id = "win2" title = "Create a Calendar" border = "normal" width = "200px">
+Calendar Name: <textbox id = "name"/>
+<button label="Create"> 
+    <attribute name="onClick">
+		myFaceBooklet2.createCalendar(name.getValue());
+		myCV.setCalendarToView(myFaceBooklet2.getACalendar(name.getValue()));
+    </attribute>
+</button> 
+</window>
+
+<p></p>
+
+<window border="normal" width="200px">
+<p>Current Calendar: <text value="@{myCV.calendarToView.calendarName}"/></p>
+</window>
+
+<listbox model="@{myCV.calendarToView.getDays}" selectedItem = "@{day}">
+<listitem each="@{day}">
+    <listcell>
+            <text value="@{day}"/>
+     </listcell>
+   </listitem>
+</listbox>
+
+<p></p>
+
+<window id = "win3" title = "Add An Event" border = "normal" width = "600px">
+Event Name: <textbox id = "Ename"/>
+<p></p>
+Event Info: <textbox id = "EInfo"/>
+<p></p>
+Event Date (mmddyyyy): <textbox id = "EDate"/>
+<p></p>
+
+<button label="Add Event"> 
+    <attribute name="onClick">
+		myCV.getCalendarToView().addEvent( myFaceBooklet2.getCurrentUser().getName(), Ename.getValue(), 
+			EInfo.getValue(), EDate.getValue() );
+    </attribute>
+</button> 
+</window>
+
+<p></p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=inAuthor\ inMessage
+comment0.target=WallPosting(String,\ String)
+comment0.text=\nCreates\ a\ new\ WallPosting\ object.\n@param\ inAuthor\ the\ author\n@param\ inMessage\ the\ message\n\n
+comment1.target=String\ getAuthor()
+comment1.text=.\nAccessor\ for\ author\ field\n@return\ author\ the\ author\ of\ the\ post\n\n
+comment2.target=String\ getMessage()
+comment2.text=.\nAccessor\ for\ message\ field\n@return\ message\ the\ content\ of\ the\ post\n\n
+comment3.target=Date\ getDate()
+comment3.text=.\nAccessor\ for\ date\ field\n@return\ date\ the\ time\ of\ the\ post\n\n
+comment4.target=boolean\ getPostLove()
+comment4.text=.\nAccessor\ for\ postLove\ field\n@return\ postLove\ the\ love\n\n
+comment5.target=void\ setPostLove()
+comment5.text=.\nMutator\ for\ postLove\ field\n\n
+numComments=6
