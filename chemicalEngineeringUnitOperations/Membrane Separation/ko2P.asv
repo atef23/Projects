@@ -1,0 +1,6 @@
+
+[ko2series] = xlsread('memsepdata.xlsx','series','W3:W7');
+[ko2parallel] = xlsread('memsepdata.xlsx','parallel','W3:W7');
+[p] = xlsread('memsepdata.xlsx','parallel','X3:X7');
+
+plot(p,ko2series,'*',p,ko2parallel,

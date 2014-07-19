@@ -1,0 +1,6 @@
+[xe] = xlsread('batchData.xlsx','mlab','A16:A30');
+[ye] = xlsread('batchData.xlsx','mlab','B16:B30');
+
+y105 = .9091*xe + .027;
+y104 = .9091*xe + .028;
+

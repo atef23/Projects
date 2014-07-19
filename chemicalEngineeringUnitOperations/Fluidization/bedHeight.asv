@@ -1,0 +1,8 @@
+% Min Fl Vel vs. Bed Height
+% stdev = .1587
+
+x = [75 212 300];
+y = [.009 .041 .076];
+e = [.001, .001, .0005];
+
+errorbar(x,y,e,'*');

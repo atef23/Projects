@@ -1,0 +1,7 @@
+% Min fl. Vel vs. Particle Density
+
+x = [2.08 2.55 4.63];
+y = [.009 .041 .076];
+e = [.001, .001, .001];
+
+errorbar(x,y,e,'*');

@@ -1,0 +1,1 @@
+[p20] = xlsread('memsepdata.xlsx','series','V11:V15');
